@@ -29,8 +29,8 @@ const callCommand = (command, messageInfo) => {
     case 'hvorlenge':
       client.say(activeChannel, `Streamen startet 03.10.2021 17:30 og har vært gående i\n${time()}`);
       break;
-    case 'sek':
-      client.say(activeChannel, `Streamen har vært gående i: ${dtime()} sekunder (${parseInt(dtime() / 60)} minutter)`);
+    case 'tid':
+      client.say(activeChannel, `Streamen har vært gående i: ${parseInt(dtime() / 3600)} timer (${parseInt(dtime() / 60)} minutter eller ${dtime()} sekunder)`);
       break;
     default:
       break
