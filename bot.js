@@ -30,10 +30,6 @@ client.on("subgift", (channel, username, streakMonths, recipient, methods, users
   client.say(channel, "Clap Clap");
 });
 
-client.on("subscribers", (channel, enabled) => {
-  client.say(channel, "Clap Clap");
-});
-
 client.on("subscription", (channel, username, method, message, userstate) => {
   client.say(channel, "Clap Clap");
 });
